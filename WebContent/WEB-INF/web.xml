@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>MultiChainJavaAPI-master</display-name>
+  
+  
+  <servlet>
+    <servlet-name>Cerca</servlet-name>
+    <servlet-class>multichain.servlet.Cerca</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Cerca</servlet-name>
+    <url-pattern>/cerca</url-pattern>
+  </servlet-mapping>
+ 
+  
+  <servlet>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <servlet-class>multichain.servlet.FileUploadServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>LastTransaction</servlet-name>
+  	<servlet-class>multichain.servlet.LastTransaction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>LastTransaction</servlet-name>
+    <url-pattern>/lastStreams</url-pattern>
+  </servlet-mapping>
+  
+  
+ 
+
+ 
+  
+  
+</web-app>
